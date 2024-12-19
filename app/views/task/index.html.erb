@@ -1,0 +1,10 @@
+<h1>Task manager</h1>
+<p>This is an app to manege your daily tasks</p>
+
+
+<%= link_to('Back to home',{controller:'main',action:'index'})%>
+<ul>
+<% @task.each do |task| %>
+    <li><%=task%></li> 
+<% end %>
+</ul>
